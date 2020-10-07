@@ -269,10 +269,12 @@
     transform: skewY(4deg) !important;
     margin-top: 50px !important;
 }
-.non-skew-4{
-    transform: skewY(4deg) !important;
+.non-skew-6{
+    transform: skewY(6deg) !important;
 }
-
+.skew-6{
+    transform: skewY(-6deg) !important;
+}
 .bg-circle-chip-1 {
     background-color: #f5f5f5;
     width : 100px;
