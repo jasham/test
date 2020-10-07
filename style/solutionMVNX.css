@@ -400,7 +400,10 @@
 .text-color-1 {
     color: #707070 !important;
 }
-
+.footer-link{
+    color: #FFFFFF !important;
+    border-right: 1px solid #FFFFFF;
+}
 .text-color-2{
     color: #FFFFFF;
 }
