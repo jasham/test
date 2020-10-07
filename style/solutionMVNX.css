@@ -45,6 +45,10 @@
     font-weight: bold;
 }
 
+.font-bold-600 {
+    font-weight: 600;
+}
+
 .topImage::after{
     position: absolute;
     width: 100%;
@@ -280,7 +284,27 @@
     background-position: center;
 }
 
+.bg-circle-chip-2 {
+    background-color: #f5f5f5;
+    width : 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('../assets/settings.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
+.bg-circle-chip-3 { 
+    background-color: #f5f5f5;
+    width : 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('../assets/thanks.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: start;
+}
 .div-2-height {
     height: 300px;
 }
@@ -379,6 +403,10 @@
 
 .text-color-4 {
     color : #42495b;
+}
+
+.text-color-5 {
+    color: #7a839e;
 }
 
 .font-size-small {
