@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.99" height="28.99" viewBox="0 0 28.99 28.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c13584;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_16822" data-name="Group 16822" transform="translate(-1121.921 -1648.853)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="14.495" cy="14.495" r="14.495" transform="translate(1121.921 1648.853)"/>
+    <g id="instagram" transform="translate(1126.895 1653.733)">
+      <g id="Group_132" data-name="Group 132">
+        <g id="Group_131" data-name="Group 131">
+          <path id="Path_11" data-name="Path 11" class="cls-2" d="M12.779,0H5.809A5.809,5.809,0,0,0,0,5.809v6.97a5.809,5.809,0,0,0,5.809,5.809h6.97a5.809,5.809,0,0,0,5.809-5.809V5.809A5.809,5.809,0,0,0,12.779,0Zm4.066,12.779a4.07,4.07,0,0,1-4.066,4.066H5.809a4.07,4.07,0,0,1-4.066-4.066V5.809A4.07,4.07,0,0,1,5.809,1.743h6.97a4.07,4.07,0,0,1,4.066,4.066Z"/>
+        </g>
+      </g>
+      <g id="Group_134" data-name="Group 134" transform="translate(4.647 4.647)">
+        <g id="Group_133" data-name="Group 133">
+          <path id="Path_12" data-name="Path 12" class="cls-2" d="M132.647,128a4.647,4.647,0,1,0,4.647,4.647A4.647,4.647,0,0,0,132.647,128Zm0,7.551a2.9,2.9,0,1,1,2.9-2.9A2.908,2.908,0,0,1,132.647,135.551Z" transform="translate(-128 -128)"/>
+        </g>
+      </g>
+      <g id="Group_136" data-name="Group 136" transform="translate(13.67 3.679)">
+        <g id="Group_135" data-name="Group 135">
+          <circle id="Ellipse_7" data-name="Ellipse 7" class="cls-2" cx="0.619" cy="0.619" r="0.619"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

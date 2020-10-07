@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="149" height="149" viewBox="0 0 149 149">
+    <g transform="translate(-202 -1829)">
+        <circle cx="74.5" cy="74.5" r="74.5" fill="#7a839e" opacity="0.08" transform="translate(202 1829)"/>
+        <g transform="translate(6 207)">
+            <rect width="104" height="35" fill="#27b06c" rx="5" transform="translate(219 1662)"/>
+            <text fill="#fff" font-family="Comfortaa" font-size="20px" font-weight="700" transform="translate(227 1686)">
+                <tspan x="0" y="0">SIGN UP</tspan>
+            </text>
+            <g>
+                <path fill="#f8c296" d="M42.423 71.324a4.717 4.717 0 0 1 4.547-4.871h.1a4.714 4.714 0 0 1 4.547 4.857c.021 8.787.008 9.649 0 22.772-.007 7.369-5.585 13.337-12.464 13.337H24.382a12.359 12.359 0 0 1-10.887-6.85L.328 75.273 1.7 74.132a6.542 6.542 0 0 1 9.611.721L15 79.339l.021-30.862a4.718 4.718 0 0 1 4.548-4.868 4.719 4.719 0 0 1 4.548 4.872v18.678a4.7 4.7 0 0 1 4.544-4.745h.106a4.718 4.718 0 0 1 4.548 4.871v1.568a4.717 4.717 0 0 1 4.549-4.871h.011a4.717 4.717 0 0 1 4.547 4.871zm0 0" transform="translate(247.295 1687.287) translate(0 -37.047)"/>
+                <path fill="#d3ffeb" d="M67.4 0a10.763 10.763 0 0 0-10.75 10.75 1.2 1.2 0 0 0 2.408 0 8.343 8.343 0 0 1 16.685 0 1.2 1.2 0 1 0 2.408 0A10.763 10.763 0 0 0 67.4 0zm0 0" transform="translate(247.295 1687.287) translate(-47.845)"/>
+            </g>
+        </g>
+    </g>
+</svg>
