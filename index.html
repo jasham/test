@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link href="./assets/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/solutionMVNX.css" >
@@ -18,7 +18,7 @@
     <nav class="fixed-top navbar navbar-expand-lg navbar-light backgrouns-color-pista nav-bar-back-ground">
         <div class="container">
         <a class="navbar-brand" href="#"><img src="./assets/csmart_logo_whitecloud.svg" class="logo-size"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
     
@@ -40,20 +40,39 @@
                 <a class="nav-link font-family-1 " href="#">Partner Network</a>
             </li>
             <li>
-                <button type="button" class="btn btn-primary round-button font-family-1">BUILD YOUR USE CASE</button>
+                <button type="button" class="btn btn-primary round-button font-family-1 ml-3">BUILD YOUR USE CASE</button>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
+            <div class="search">
+                <input id="search-box">
+                <i id="search_icon" class="fa fa-search headersearch"></i>
+            </div>
+            <!-- <div class="search-2">
+                <i id="search_icon" class="fa fa-search headersearch"></i>
+            </div> -->
+            <div class="earth" id="earth">
+                <i class="fa fa-globe-americas"></i>
+            </div>
+            <div id="google_translate_element"></div>
+            <!-- Google translate  -->
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+            </script>
+    
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search"> -->
             <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
         </form>
         </div>
         </div>
     </nav>
-    <div class="ban1-div d-flex flex-column mt-5">
+    <div class="ban1-div d-flex flex-column">
         <img src="assets/bg-mage.svg" class="img-fluid">  
-        <div class=" ban1-sub-div d-flex align-items-center">
-            <div class="container">
+        <div class=" ban1-sub-div d-flex align-items-center ">
+            <div class="container pt-5">
                 <div class="d-flex flex-column">
                     <h1 class="font-bold text-color-4 ">MVNX</h1>
                     <h3 class="text-color-4">CSP 2 DSP - Digital Disruption</h3>
@@ -241,10 +260,10 @@
                         <div class="row d-flex justify-content-between align-items-center pt-3">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex flex-column justify-content-center">
                                 <div class="d-flex flex-column">
-                                    <label class="font-size-2 text-color-2">
+                                    <label class="font-size-2 text-color-2 font-bold-600">
                                         Want to learn more about how can
                                     </label>
-                                    <label class="font-size-2 text-color-2">
+                                    <label class="font-size-2 text-color-2 font-bold-600">
                                         cSMART MVNX help transform your business?  
                                     </label>
                                 </div>
@@ -334,8 +353,8 @@
                 <a href="#" class="mr-2 pr-2 mb-2 footer-link text-color-2">&#169;cSMART 2020 </a>
                 <a href="#" class="mr-2 pr-2 mb-2  footer-link text-color-2">Covalensedigital</a>
                 <a href="#" class="mr-2 pr-2 mb-2  footer-link text-color-2">Privacy Policy</a>
-                <a href="#" class="mr-2 pr-2 mb-2  footer-link text-color-2">Disclamer</a>
-                <a href="#" class="mr-2 pr-2 mb-2  footer-link text-color-2">Site Map</a>
+                <a href="#" class="mr-2 pr-2 mb-2  footer-link text-color-2">Disclaimer</a>
+                <a href="#" class="mr-2 pr-2 mb-2  footer-link-no text-color-2">Site Map</a>
             </div>
         </div>
     </div>
@@ -345,5 +364,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+       
+    </script>
   </body>
 </html>
