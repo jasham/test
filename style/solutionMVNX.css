@@ -554,7 +554,7 @@ body {
     padding-bottom: 10px ;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .nav-bar-back-ground{
         background-color: #FFFFFF !important;
         z-index: 10000 !important;
@@ -567,15 +567,15 @@ body {
         height: 200px;
     }    
  }
-
+ */
  .last-div-image {
     padding-bottom : 8vh;
  }
- @media (min-width : 800px){
+ /* @media (min-width : 800px){
     .last-div-image{
         padding-bottom : 15vh;
     }
- }
+ } */
 
 
  /* html {
@@ -599,5 +599,3 @@ body {
       font-size: 1.6rem;
     }
   } */
-
- 
