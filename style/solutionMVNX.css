@@ -405,6 +405,13 @@
     border-right: 1px solid #FFFFFF;
 }
 
+.footer-link2 {
+    color : #42495b;
+}
+
+.footer-link2:focus{
+    color : #42495b;
+}
 .footer-link-no {
     color: #FFFFFF !important;
 }
