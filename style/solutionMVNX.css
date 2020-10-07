@@ -8,6 +8,43 @@
     padding-top: 30px !important;
 }
 
+.bg-img-top {
+    background-image: url('../assets/bg-mage.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width : 100%;
+    height: 512px;
+}
+
+.ban-img {
+    width : 100%;
+}
+
+.ban1-div {
+    position: relative;
+}
+
+.ban1-sub-div{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-size {
+    width : 70px;
+    height: 33px;
+}
+
+.font-family-1 {
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
 .topImage::after{
     position: absolute;
     width: 100%;
@@ -339,6 +376,14 @@
 .text-color-3{
     color: #06c164;
 }
+
+.text-color-4 {
+    color : #42495b;
+}
+
+.font-size-small {
+
+}
 .font-size-big {
     font-size: 23px !important;
 }
@@ -462,6 +507,8 @@ body {
     top : 0px;
     left: 0px;
     margin: 0px;
+    font-size: 14px !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navbar {
