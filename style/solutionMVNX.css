@@ -214,7 +214,9 @@
     /* padding-bottom: 100px !important; */
 }
 
-
+.l-div-margin{
+    margin-bottom: 80px;
+}
 
 .belowImage-last::after{
     position: absolute;
@@ -238,10 +240,12 @@
     position: relative;
     padding: 0px !important;
     z-index: 10000 !important;
+    transform-origin: top left;
+    transform: skewY(-6deg);
 }
 
 
-.belowImage-bottom::after{
+/* .belowImage-bottom::after{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -254,7 +258,7 @@
     transform-origin: top left;
     transform: skewY(-6deg);
     /* z-index: -1; */
-}
+} */
 
 .non-skew{
     transform: skewY(3deg) !important;
