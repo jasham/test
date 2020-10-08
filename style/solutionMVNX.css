@@ -352,7 +352,8 @@
 }
 
 .nav-item:hover{
-    border-bottom: 3px solid #FFFFFF !important;
+    border-bottom: 3px solid #008cd1 !important;
+    
 }
 
 .nav-item {
