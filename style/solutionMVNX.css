@@ -373,6 +373,18 @@
 .backgrouns-color-white {
     background-color: white !important;
 }
+
+.nav-item{
+    margin-right: 15px;
+}
+
+.backgrouns-color-1 {
+ background-color: #159bdd !important ;
+}
+
+.backgrouns-color-2 {
+    background-color: #7a839e !important;
+}
 .backgrouns-color-red {
     background-color: red !important;
 }
@@ -405,6 +417,11 @@
     border-right: 1px solid #FFFFFF;
 }
 
+.footer-link:hover {
+    color:  #008cd1 !important;
+    font-weight: 500;
+}
+
 .footer-link2 {
     color : #42495b;
 }
@@ -414,6 +431,11 @@
 }
 .footer-link-no {
     color: #FFFFFF !important;
+}
+
+.footer-link-no:hover{
+    color:  #008cd1 !important;
+    font-weight: 500;
 }
 .text-color-2{
     color: #FFFFFF;
@@ -549,6 +571,16 @@
     top: -75px;
 }
 
+.check-mark{
+    background-image: url('../assets/tick.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width : 12px;
+    height: 100%;
+    background-position: center;
+    display: block;
+    margin-right: 5px;
+}
 body {
     width : 100%;
     height : 100vh;
@@ -679,9 +711,11 @@ body {
     offset: none;
     border-radius: 10px;
 }
-
+.div-3-p {
+    padding-bottom: 100px !important;
+}
 .search:hover {
-    border : 1px solid #FFFFFF;
+    border : 1px solid gray;
 }
 
 #search-box:focus + .search {
