@@ -33,8 +33,8 @@
 }
 
 .logo-size {
-    width : 70px;
-    height: 33px;
+    /* width : 70px; */
+    height: 40px;
 }
 
 .font-family-1 {
@@ -489,7 +489,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     height : 40px;
-    width : 100px;
+    /* width : 100px; */
 }
 
 .linked-in {
