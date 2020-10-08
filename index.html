@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="./style/solutionMVNX.css" >
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 
   </head>
   <body>
@@ -24,13 +28,13 @@
     
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link font-family-1 " href="#">Product <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link font-family-1 " href="#">Solutions</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link font-family-1 " href="#">Insights</a>
             </li>
             <li class="nav-item">
@@ -39,22 +43,32 @@
             <li class="nav-item">
                 <a class="nav-link font-family-1 " href="#">Partner Network</a>
             </li>
-            <li class="nav-item">
-                <button type="button" class="btn round-button font-family-1 text-color-2 backgrouns-color-1 pl-4 pr-4">BUILD YOUR USE CASE</button>
+            <li class="">
+                <button type="button" class="btn round-button font-family-1 blue-button pl-4 pr-4">BUILD YOUR USE CASE</button>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <div class="search">
+            <div class="search" id="search_wrapper">
                 <input id="search-box">
                 <i id="search_icon" class="fa fa-search headersearch"></i>
             </div>
             <!-- <div class="search-2">
                 <i id="search_icon" class="fa fa-search headersearch"></i>
             </div> -->
-            <div class="earth" id="earth">
+            
+            <div class="earth d-flex flex-row align-items-center" id="earth">
+                <div id="lang-wrapper1">
+                    <div id="google_translate_element"></div>
+                </div>
                 <i class="fa fa-globe-americas"></i>
+                <div id="lang-wrapper2">
+                    <div id="google_translate_element"></div>
+                </div>
             </div>
-            <div id="google_translate_element"></div>
+            
+            
+
+            </div>
             <!-- Google translate  -->
             <script type="text/javascript">
                 function googleTranslateElementInit() {
@@ -161,7 +175,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-between align-items-center ">
-                <button type="button" class="btn backgrouns-color-green-2 text-color-2 pl-4 pr-4 round-button font-family-1">TALK TO US</button>   
+                <button type="button" class="btn green-button pl-4 pr-4 round-button font-family-1">TALK TO US</button>   
             </div>
         </div>
     </div>
@@ -273,7 +287,7 @@
                             </div>
                         </div> 
                         <div class="d-flex justify-content-between align-items-center">
-                            <button type="button" class="btn backgrouns-color-white text-color-3 pl-4 pr-4 round-button font-family-1">CONTACT US</button>   
+                            <button type="button" class="btn white-button pl-4 pr-4 round-button font-family-1">CONTACT US</button>   
                         </div>
                     </div>
                 </div>
@@ -302,7 +316,7 @@
                                     The subscription economy is growing. Digital transformation is reshaping broad changes within telecoms operations as Communications Service Providers (CSPs) continue to evolve into Digital Service Providers (DSPs). As service providers shift from physical products to digital services, they will need to rapidly design and monetize offerings across cloud, IoT, and future 5G services.
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center z-index">
-                                    <button type="button" class="btn backgrouns-color-green-2 pl-4 pr-4 text-color-2 round-button font-family-1">READ MORE</button>   
+                                    <button type="button" class="btn green-button pl-4 pr-4 round-button font-family-1">READ MORE</button>   
                                 </div>
                             </div>
                             
@@ -364,12 +378,34 @@
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
-       
+        $("#search-box").css({ width : "0px"})
+        $(document).ready(function(){
+            $("#search_wrapper").mouseenter(function() {
+                $("#search-box").animate({width: '100px'});
+            })
+            $("#search_wrapper").mouseleave(function() {
+                $("#search-box").animate({width: '10px'});
+            })
+
+            $("#earth").mouseenter(function(){
+                var viewportWidth = $(window).width();
+                console.log("I am happy",viewportWidth)
+                $("#lang-wrapper1").show()
+            })
+            $("#earth").mouseleave(function(){
+                var viewportWidth = $(window).width();
+                console.log("I am happy",viewportWidth)
+                $("#lang-wrapper1").hide()
+            })  
+        })
+
+        
     </script>
   </body>
 </html>
