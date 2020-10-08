@@ -747,7 +747,7 @@ body {
     right : 10px;
   } */
 .goog-te-gadget{
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     z-index: 100000;
     height: 25px;
     overflow: hidden;
@@ -781,6 +781,9 @@ body {
     border : 1px solid #FFFFFF;
 }
 
-#google_translate_element{
-    background-color: tomato !important;
+.goog-te-gadget-simple{
+    border : 0px;
+    border-radius: 15px;
 }
+
+
