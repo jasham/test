@@ -357,6 +357,7 @@
 
 .nav-item {
     border-bottom: 3px solid transparent;
+    padding-bottom: 7px;
 }
 
 .com-bg-image-mobile {
@@ -786,4 +787,7 @@ body {
     border-radius: 15px;
 }
 
+nav{
+    padding-bottom: 0px !important;
+}
 
