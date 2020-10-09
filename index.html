@@ -48,7 +48,7 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0 pb-2">
-            <div class="search" id="search_wrapper">
+            <div class="search round-button" id="search_wrapper">
                 <input id="search-box">
                 <i id="search_icon" class="fa fa-search headersearch"></i>
             </div>
@@ -327,8 +327,8 @@
         </div>
         <div class="backgrouns-color-gray-1 pb-5">
             <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 h-100 d-flex flex-column align-items-start justify-content-start">
+                <div class="row d-flex justify-content-between main-footer-wrapper">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 h-100 d-flex flex-column align-items-start justify-content-start footer-left">
                         <div class="d-flex flex-column">
                             <div class="logo-footer"></div>
                             <div class="d-flex flex-row mt-3 w-100">
@@ -340,8 +340,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex flex-row  mt-3">
-                        <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 col-6 row d-flex flex-row justify-content-between w-100">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex flex-row  mt-3 footer-right">
+                        <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 col-6 row d-flex flex-row justify-content-between w-100 footer-right-inside">
                             <div class="d-flex flex-column ">
                                 <a href="#" class="footer-link2">Footer Link 1</a>
                                 <a href="#" class="footer-link2">Footer Link 1</a>
@@ -384,7 +384,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
-        $("#search-box").css({ width : "0px"})
+        $("#search-box").css({ width : "20px"})
         $(document).ready(function(){
             $("#search_wrapper").mouseenter(function() {
                 $("#search-box").animate({width: '100px'});
