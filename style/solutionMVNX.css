@@ -742,8 +742,24 @@ body {
       font-size: 0.7rem;
       /* html { font-size: 1.25rem; } */
     }
+    .tex-cen-sm {
+        text-align: center;
+    }
+    .elem-cen{
+        justify-content: center !important;
+    }
     h1 {
         font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    h5{
+        font-size: 1rem;
     }
     /* h2 {
         font-size: 1.5rem;
@@ -788,6 +804,9 @@ body {
   @media (max-width: 768px) {
     html {
       font-size: 0.9rem;
+    }
+    .elem-cen{
+        justify-content: center !important;
     }
     .center-chip{
         display: flex;
