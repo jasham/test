@@ -12,11 +12,21 @@
     <link rel="stylesheet" href="./style/solutionMVNX.css" >
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-    <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      
+        $(function(){
+        var img = new Image();
+        img.src =$('.bgtest').css('background-image').replace('url(','').replace(')','').replace(/\"/gi, "");
+        
+        function resize(){
+            var bgHeight = parseInt($('.bgtest').css('width')) * img.height / img.width;
+            $('.bgtest').css('height',bgHeight);
+        }
+        window.onresize = resize; resize();
+        $(window).trigger('resize');
+        });
+    </script>
   </head>
   <body>
     <nav class="fixed-top navbar navbar-expand-lg navbar-light backgrouns-color-pista nav-bar-back-ground">
@@ -25,71 +35,60 @@
             <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="height: 100%!important;">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link font-family-1 " href="#">Product <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link font-family-1 " href="#">Solutions</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link font-family-1 " href="#">Insights</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link font-family-1 " href="#">Support</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link font-family-1 " href="#">Partner Network</a>
-            </li>
-            <li class="">
-                <button type="button" class="btn round-button font-family-1 blue-button pl-4 pr-4">BUILD YOUR USE CASE</button>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0 pb-2">
-            <div class="search round-button" id="search_wrapper">
-                <input id="search-box">
-                <i id="search_icon" class="fa fa-search headersearch"></i>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="height: 100%!important;">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link font-family-1 " href="#">Product <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-family-1 " href="#">Solutions</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link font-family-1 " href="#">Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-family-1 " href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-family-1 " href="#">Partner Network</a>
+                    </li>
+                    <li class="">
+                        <button type="button" class="btn round-button font-family-1 blue-button pl-4 pr-4">BUILD YOUR USE CASE</button>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 pb-2">
+                    <div class="search round-button" id="search_wrapper">
+                        <input id="search-box">
+                        <i id="search_icon" class="fa fa-search headersearch"></i>
+                    </div>
+                    <div class="earth d-flex flex-row align-items-center" id="earth">
+                        <div id="lang-wrapper1">
+                            <div id="google_translate_element"></div>
+                        </div>
+                        <i class="fa fa-globe-americas"></i>
+                        <div id="lang-wrapper2">
+                            <div id="google_translate_element"></div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                    <!-- Google translate  -->
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                        }
+                    </script>
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </form>
             </div>
-            <!-- <div class="search-2">
-                <i id="search_icon" class="fa fa-search headersearch"></i>
-            </div> -->
-            
-            <div class="earth d-flex flex-row align-items-center" id="earth">
-                <div id="lang-wrapper1">
-                    <div id="google_translate_element"></div>
-                </div>
-                <i class="fa fa-globe-americas"></i>
-                <div id="lang-wrapper2">
-                    <div id="google_translate_element"></div>
-                </div>
-            </div>
-            
-            
-
-            </div>
-            <!-- Google translate  -->
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-                }
-            </script>
-    
-            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search"> -->
-            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-        </form>
-        </div>
         </div>
     </nav>
-    <div class="ban1-div d-flex flex-column">
+    <div class="ban1-div d-flex flex-column pt-5">
         <img src="assets/bg-mage.svg" class="img-fluid">  
-        <div class=" ban1-sub-div d-flex align-items-center ">
+        <div class=" ban1-sub-div d-flex align-items-center pt-5">
             <div class="container pt-5">
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column pb-5" style="width: 60%;">
                     <h1 class="font-bold text-color-4 ">MVNX</h1>
-                    <h3 class="text-color-4">CSP 2 DSP - Digital Disruption</h3>
+                    <h5 class="text-color-4">CSP 2 DSP - Digital Disruption</h5>
                 </div>
             </div>
         </div>
@@ -200,22 +199,25 @@
                             <div class="d-flex flex-column">
                                 <h5 class="font-bold text-color-4">
                                     Digital Platform
-                                </h5>
-                                
+                                </h5>                            
                                 <p class="text-color-5 font-family-1 ">
                                     Bridging business goals and technology goals will help create new revenue streams for organization’s and provide Digital platform monetization opportunities namely:
-                                </p>
-                               
-                                <p class="text-color-5 font-family-1 d-flex flex-row">
-                                    <span class="check-mark"></span>Convergence of Pre & Post-paid offerings
-                                </p>
-                                
-                                <p class="text-color-5 font-family-1 d-flex flex-row">
-                                    <span class="check-mark"></span>Faster go to market solutions with cloud native approach
-                                </p>
-                                <p class="text-color-5 font-family-1 d-flex flex-row">
-                                    <span class="check-mark"></span> Revenue against usage of all services
-                                </p>
+                                </p>                            
+                                <div class="d-flex flex-row">
+                                    <img src="assets/tick.svg" width="10px" height="10px" class="mt-2 mr-2">
+                                    <p class="text-color-5 font-family-1 d-flex flex-row">Convergence of Pre & Post-paid offerings
+                                    </p>
+                                </div>                      
+                                <div class="d-flex flex-row">
+                                    <img src="assets/tick.svg" width="10px" height="10px" class="mt-2 mr-2">
+                                    <p class="text-color-5 font-family-1 d-flex flex-row">Faster go to market solutions with cloud native approach
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <img src="assets/tick.svg" width="10px" height="10px" class="mt-2 mr-2">
+                                    <p class="text-color-5 font-family-1 d-flex flex-row">Revenue against usage of all services
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -228,15 +230,21 @@
                                 <p class="text-color-5 font-family-1 ">
                                     Today the consumer wants immediacy and instant gratification, instant rewards, and the CSP/DSP telco’s bear the brunt of every changing landscape and optimally any BSS solutions that could these would be default choice:                            </label>
                                 </p>
-                                <p class="text-color-5 font-family-1 d-flex flex-row">
-                                    <span class="check-mark"></span> Reduce risk for digital BSS transformation by evolving existing products
-                                </p>
-                                <p class="text-color-5 font-family-1 d-flex flex-row">
-                                    <span class="check-mark"></span>Differentiate your offers with a true digital experience
-                                </p>
-                                <p class="text-color-5 font-family-1 d-flex flex-row">
-                                    <span class="check-mark"></span> Create and launch new services in minutes
-                                </p>
+                                <div class="d-flex flex-row">
+                                    <img src="assets/tick.svg" width="10px" height="10px" class="mt-2 mr-2">
+                                    <p class="text-color-5 font-family-1 d-flex flex-row"> Reduce risk for digital BSS transformation by evolving existing products
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <img src="assets/tick.svg" width="10px" height="10px" class="mt-2 mr-2">
+                                    <p class="text-color-5 font-family-1 d-flex flex-row">Differentiate your offers with a true digital experience
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <img src="assets/tick.svg" width="10px" height="10px" class="mt-2 mr-2">
+                                    <p class="text-color-5 font-family-1 d-flex flex-row"> Create and launch new services in minutes
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 d-flex flex-column align-items-end justify-content-center order-lg-1 order-md-0 order-sm-0 order-0">
@@ -245,7 +253,6 @@
                     </div>
                     <div class="row d-flex justify-content-between mb-4">
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 d-flex flex-column align-items-start justify-content-center">
-                            <!-- <div class="com-bg-image-mobile"></div> -->
                             <img src="./assets/mobile.svg" class="img-fluid">
                         </div>
                         <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 d-flex flex-column mt-5">
@@ -256,12 +263,19 @@
                                 <p class="text-color-5 font-family-1 ">
                                     ”Data is the new Oil” and it affects the way businesses are run today. In most common format Data is used 10 times more than any other telco services today.                            </label>
                                 </p>
-                                <p class="text-color-5 font-family-1 d-flex flex-row">
-                                    <span class="check-mark"></span> Customers pay for experience from movies to health care
-                                </p>
-                                <p class="text-color-5 font-family-1 d-flex flex-row">
-                                    <span class="check-mark"></span>Business houses need customers delivered to their doorstep and they are willing to pay it
-                                </p>
+                                <div class="d-flex flex-row">
+                                    <img src="assets/tick.svg" width="10px" height="10px" class="mt-2 mr-2">
+                                    <p class="text-color-5 font-family-1 d-flex flex-row">
+                                        Customers pay for experience from movies to health care
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <img src="assets/tick.svg" width="10px" height="10px" class="mt-2 ml-2">
+                                    <p class="text-color-5 font-family-1 d-flex flex-row">
+                                        Business houses need customers delivered to their doorstep and they are willing to pay it
+                                    </p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -271,9 +285,31 @@
     </div>
     <div>
         <div class="backgrouns-color-green pt-5 pb-5 skew-6">
-            <div class="bg-img-mvnx-div-3 d-flex justify-content-between ">
+            <div class="non-skew-6">
+                <img src="assets/bg-2.svg" width="100%">
+                <div class="d-flex justify-content-center align-items-center banner-wrapper mt-3 ">
+                    <div class="container">
+                        <div class="row d-flex justify-content-between align-items-center pt-3">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex flex-column justify-content-center">
+                                <div class="d-flex flex-column">
+                                    <h4 class="text-color-2 font-bold-600">
+                                        Want to learn more about how can
+                                    </h4>
+                                    <h4 class="text-color-2 font-bold-600">
+                                        cSMART MVNX help transform your business?  
+                                    </h4>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn white-button pl-4 pr-4 round-button font-family-1">CONTACT US</button>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="bg-img-mvnx-div-3 non-skew-6 d-flex justify-content-between ">
                 <div class="container pt-5">
-                    <div class="non-skew-6">
+                    <div>
                         <div class="row d-flex justify-content-between align-items-center pt-3">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex flex-column justify-content-center">
                                 <div class="d-flex flex-column">
@@ -291,17 +327,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-
     </div>
-    <div class="backgrouns-color-gray-1">
-        <div class=" skew-6 backgrouns-color-white pt-5 pb-5 l-div-margin">
+    <div>
+        <div class=" skew-6 backgrouns-color-white pt-5">
             <div class="container pt-5">
                 <div class="non-skew-6">
                     <div class="row d-flex justify-content-between">
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex flex-column align-items-start justify-content-start">
-                            <!-- <div class="com-bg-image-bit"></div> -->
                             <img src="./assets/Group 21340.jpg" class="img-fluid">
                         </div>
                         <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 d-flex flex-column mt-3">
@@ -319,46 +353,48 @@
                                     <button type="button" class="btn green-button pl-4 pr-4 round-button font-family-1">READ MORE</button>   
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="backgrouns-color-gray-1 pb-5">
-            <div class="container">
-                <div class="row d-flex justify-content-between main-footer-wrapper">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 h-100 d-flex flex-column align-items-start justify-content-start footer-left">
-                        <div class="d-flex flex-column">
-                            <div class="logo-footer"></div>
-                            <div class="d-flex flex-row mt-3 w-100">
-                                <a href="#" class="social"><div class="linked-in"></div></a>
-                                <a href="#" class="social"><div class="facebook"></div></a>
-                                <a href="#" class="social"><div class="twitter"></div></a>
-                                <a href="#" class="social"><div class="youtube"></div></a>
-                                <a href="#" class="social"><div class="insta"></div></a>
-                            </div>
+    </div>
+    <div class="main-skew backgrouns-color-gray-1">
+        <div class="sub-two"></div>
+        <div class="sub-skew" id="sub-skew"></div>
+    </div>
+    <div class="backgrouns-color-gray-1 pt-3 pb-3">
+        <div class="container ">
+            <div class="row d-flex justify-content-between main-footer-wrapper">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 h-100 d-flex flex-column align-items-start justify-content-start footer-left">
+                    <div class="d-flex flex-column">
+                        <div class="logo-footer"></div>
+                        <div class="d-flex flex-row mt-3 w-100">
+                            <a href="#" class="social"><div class="linked-in"></div></a>
+                            <a href="#" class="social"><div class="facebook"></div></a>
+                            <a href="#" class="social"><div class="twitter"></div></a>
+                            <a href="#" class="social"><div class="youtube"></div></a>
+                            <a href="#" class="social"><div class="insta"></div></a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex flex-row  mt-3 footer-right">
-                        <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 col-6 row d-flex flex-row justify-content-between w-100 footer-right-inside">
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="footer-link2">Footer Link 1</a>
-                                <a href="#" class="footer-link2">Footer Link 1</a>
-                                <a href="#" class="footer-link2">Footer Link 1</a>
-                            </div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="footer-link2">Footer Link 1</a>
-                                <a href="#" class="footer-link2">Footer Link 1</a>
-                                <a href="#" class="footer-link2">Footer Link 1</a>
-                            </div>
-                            <div class="d-flex flex-column ">
-                                <a href="#" class="footer-link2">Footer Link 1</a>
-                                <a href="#" class="footer-link2">Footer Link 1</a>
-                                <a href="#" class="footer-link2">Footer Link 1</a>
-                            </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex flex-row  mt-3 footer-right">
+                    <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 col-6 row d-flex flex-row justify-content-between w-100 footer-right-inside">
+                        <div class="d-flex flex-column ">
+                            <a href="#" class="footer-link2">Footer Link 1</a>
+                            <a href="#" class="footer-link2">Footer Link 1</a>
+                            <a href="#" class="footer-link2">Footer Link 1</a>
                         </div>
-                        
+                        <div class="d-flex flex-column ">
+                            <a href="#" class="footer-link2">Footer Link 1</a>
+                            <a href="#" class="footer-link2">Footer Link 1</a>
+                            <a href="#" class="footer-link2">Footer Link 1</a>
+                        </div>
+                        <div class="d-flex flex-column ">
+                            <a href="#" class="footer-link2">Footer Link 1</a>
+                            <a href="#" class="footer-link2">Footer Link 1</a>
+                            <a href="#" class="footer-link2">Footer Link 1</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -395,17 +431,38 @@
 
             $("#earth").mouseenter(function(){
                 var viewportWidth = $(window).width();
-                console.log("I am happy",viewportWidth)
                 $("#lang-wrapper1").show()
             })
             $("#earth").mouseleave(function(){
                 var viewportWidth = $(window).width();
-                console.log("I am happy",viewportWidth)
                 $("#lang-wrapper1").hide()
             })  
+        })        
+        $(function(){
+            var img = new Image();
+            img.src =$('.bgtest').css('background-image').replace('url(','').replace(')','').replace(/\"/gi, "");
+            
+            function resize(){
+                var bgHeight = parseInt($('.bgtest').css('width')) * img.height / img.width;
+                $('.bgtest').css('height',bgHeight);
+            }
+            window.onresize = resize; resize();
+            $(window).trigger('resize');
+        });
+        $(document).ready(function () {
+            initDiv('skew-elem-one')
+            initDiv('skew-elem-two')
+            $(window).resize(onResizeDiv('skew-elem-one'))
+            $(window).resize(onResizeDiv('skew-elem-two'))
         })
-
-        
+        $(window).resize(function(){
+            let mainDivHeight = document.getElementById('sub-skew').getBoundingClientRect().height
+            $(".main-skew").css({ height : mainDivHeight })
+            $(".sub-two").css({ height : mainDivHeight })
+        })
+        let mainDivHeight = document.getElementById('sub-skew').getBoundingClientRect().height
+        $(".main-skew").css({ height : mainDivHeight })
+        $(".sub-two").css({ height : mainDivHeight })
     </script>
   </body>
 </html>
