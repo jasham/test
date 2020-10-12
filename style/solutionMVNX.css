@@ -1037,15 +1037,17 @@ h2{
 .bgtest{
     width: 100%;
     float: left;
-    background-image: url("../assets/fintech_banner.png");
+    background-image: url("../assets/mvnx-banner.png");
     background-size: cover;
-    /* min-height: 494px; */
-    min-height: 764px;
+    min-height: 494px;
+    /* min-height: 764px; */
     background-repeat: no-repeat;
     background-position: left;
     height: auto;
     position: relative;
     z-index: 1000;
+    display: flex;
+    align-items: center;
     /* position: absolute; */
     /* margin-top: 56px; */
 }
