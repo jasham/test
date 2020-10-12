@@ -766,6 +766,10 @@ body {
     h5{
         font-size: 1rem;
     }
+
+    .footer-center{
+        justify-content: center !important;
+    }
     /* h2 {
         font-size: 1.5rem;
     }
@@ -888,7 +892,7 @@ body {
 .goog-te-gadget{
     /* background-color: #FFFFFF; */
     z-index: 100000;
-    height: 25px;
+    height: 37px;
     overflow: hidden;
 }
 
@@ -920,9 +924,15 @@ body {
 }
 
 .goog-te-gadget-simple{
-    border : 0px;
+    border : 0px !important;
     border-radius: 15px;
+    padding : 7px !important;
 }
+.goog-te-menu2{
+    width: 100% !important;
+    overflow-x: scroll !important;
+}
+
 
 nav{
     padding-bottom: 0px !important;
@@ -1089,7 +1099,7 @@ h2{
 }
 
 .up-skew {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 96%);
     position: absolute;
     background-color: #f5f5f5;
     bottom: 0;
